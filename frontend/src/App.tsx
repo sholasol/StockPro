@@ -1,12 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ChangeEvent, SyntheticEvent, useEffect, useState } from 'react';
 import './App.css';
 import CardList from './components/CardList/CardList';
+import Search from './components/Search/Search';
+import { CompanySearch } from './company';
+import { searchCompanies } from './api';
 
 function App() {
+
+   const [search, setSearch] = useState("");
+   const [serverError, setServerError] = useState<string | null>(null);
+   const [searchResult, setSearchResult] = useState<CompanySearch[]>([]);
+
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setSearch(e.target.value);
+    }
+    const onClick = async (e: SyntheticEvent) => {
+        const result = await searchCompanies(search);
+        if(typeof result === "string") {
+          setServerError(result);
+        }else if(Array.isArray(result.data)) {
+          setSearchResult(result.data);
+        }
+        console.log(searchResult);
+    };
+
   return (
     <div className="App">
-      <CardList />
+      <Search handleChange={handleChange} search={search} onClick={onClick}/>
+      {serverError && <h1>{serverError}</h1>}
+      <CardList searchResults={searchResult}/>
     </div>
   );
 }
