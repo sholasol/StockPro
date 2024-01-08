@@ -1,17 +1,21 @@
 import React from 'react'
 
-type Props = {}
+interface Props  {
+  companyName: string;
+  ticker: string;
+  price: number;
+}
 
-const Card = (props: Props) => {
+const Card = ({companyName, ticker, price}: Props) => {
   return (
-   <div className="card">
+   <div className="card col-md-6 offset-md-3 mb-2">
     <div className="card-header">
         Featured
     </div>
     <div className="card-body">
-        <h5 className="card-title">AAPL</h5>
-        <h2>$110</h2>
-        <p className="card-text">Some text here</p>
+        <h5 className="card-title">{companyName}</h5>
+        <h2>$ {price}</h2>
+        <p className="card-text">{ticker}</p>
         <a href="#" className="btn btn-primary">Go somewhere</a>
     </div>
     </div>
