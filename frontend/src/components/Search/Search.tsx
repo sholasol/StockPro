@@ -3,13 +3,13 @@ import fin from '../../assets/fin.jpg'
 import './search.css';
 
 interface Props  {
-    onClick: (e: SyntheticEvent)=> void;
+    onSearchSubmit: (e: SyntheticEvent)=> void;
     search: string | undefined;
-    handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
+    handleSearchChange: (e: ChangeEvent<HTMLInputElement>) => void;
 
 }
 
-const Search: React.FC<Props> = ({onClick, search, handleChange}: Props) : JSX.Element => {
+const Search: React.FC<Props> = ({onSearchSubmit, search, handleSearchChange}: Props) : JSX.Element => {
 
    
 
@@ -22,15 +22,14 @@ const Search: React.FC<Props> = ({onClick, search, handleChange}: Props) : JSX.E
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est optio 
             commodi mollitia neque dolor blanditiis maxime? Aspernatur recusandae error, illum consectetur facere distinctio veniam magni!
             </p>
-            <form >
+            <form onSubmit={onSearchSubmit}>
                 <div className="search">
               <i className="ri-file-search-line"></i>
               <input type="text" 
               value={search}
-              onChange={(e) => handleChange(e)}
+              onChange={(e) => handleSearchChange(e)}
             className='form-control'
             placeholder='Find a company' />
-            <button onClick={(e) => onClick(e)}>Go</button>
             </div>
             </form>
         </div>
