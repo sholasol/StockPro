@@ -13,7 +13,6 @@ const CardPortfolio = ({portfolioValue, onPortfolioDelete}: Props) => {
         <div className="card col-md-10 offset-md-1 mb-2">
         <div className="card-body">
             <h5 className="card-title">{portfolioValue}</h5>
-            <a href="#" className="card-link">Card link</a>
             <DeletePortfolio 
             onPortfolioDelete ={onPortfolioDelete}
             portfolioValue={portfolioValue}

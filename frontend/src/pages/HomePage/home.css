@@ -1,0 +1,37 @@
+.container {
+    margin-top: 50px;
+}
+.desc h1 {
+    margin-top: 150px;
+}
+.hImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.homeImg {
+    width: 450px;
+    height: 450px;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+    border-radius: 15px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 3;
+    }
+}
+
+.homeImg:hover {
+    transform: scale(1.05) rotate(-2deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card a {
+    text-decoration: none;
+}

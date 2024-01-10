@@ -19,7 +19,7 @@ const CardList: React.FC<Props> = ({searchResults, onPortfolioCreate}: Props) : 
                   onPortfolioCreate={onPortfolioCreate} />;
                 })
             ): (
-                <h1>No Results to display</h1>
+                <h1 className='text-center'>No Results to display</h1>
             )
         }
     </div>
