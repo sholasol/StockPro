@@ -4,6 +4,9 @@ import { CompanyProfile } from '../../company';
 import { getCompanyProfile } from '../../api';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Tile from '../../components/Tile/Tile';
+import Spinner from '../../components/Spinners/Spinner';
+import CompanyDashboard from '../../components/CompanyDashboard/CompanyDashboard';
+import CompFinder from '../../components/CompFinder/CompFinder';
 
 type Props = {}
 
@@ -53,60 +56,18 @@ const CompanyPage = (props: Props) => {
         <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 className="h2">Dashboard</h1>
         </div>
-
-        <Tile/>
-
-        <h2>Section title</h2>
-        <div className="table-responsive small">
-          <table className="table table-striped table-sm">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>random</td>
-                <td>data</td>
-                <td>placeholder</td>
-                <td>text</td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>placeholder</td>
-                <td>irrelevant</td>
-                <td>visual</td>
-                <td>layout</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>data</td>
-                <td>rich</td>
-                <td>dashboard</td>
-                <td>tabular</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>information</td>
-                <td>placeholder</td>
-                <td>illustrative</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>1,015</td>
-                <td>random</td>
-                <td>tabular</td>
-                <td>information</td>
-                <td>text</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <CompanyDashboard ticker={ticker!}>
+         <div className='row mb-5'>
+            <Tile title="Company Name" subTitle={company.companyName} />
+            <Tile title="Price" subTitle={"$" + company.price.toString()} />
+            <Tile title="DCF" subTitle={"$" + company.dcf.toString()} />
+            <Tile title="Sector" subTitle={company.sector} />
+         </div>
+        <CompFinder ticker={company.symbol} />
+        <p className="mb-2">
+              {company.description}
+            </p>
+       </CompanyDashboard>
       </main>
     </div>
   </div>
@@ -114,7 +75,7 @@ const CompanyPage = (props: Props) => {
       ) 
       : 
       (
-        <h2 className='text-center'>Company not found</h2>
+        <Spinner />
       )
     }
 

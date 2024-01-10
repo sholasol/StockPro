@@ -1,25 +1,28 @@
 import React from 'react'
 import './tile.css'
 
-type Props = {}
+type Props = {
+  title: string;
+  subTitle: string;
+};
 
-const Tile = (props: Props) => {
+const Tile = ({title, subTitle}: Props) => {
   return (
-    <div className='row mb-5'>
+    <>
         <div className="col-sm-3 mb-3 mb-sm-0">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Company</h5>
+              <h5 className="card-title">{title}</h5>
               <div className="line-p"></div>
               <div className='icon'>
                 <i className="ri-home-office-line btn btn-primary icon-btn fa-2x"></i>
-                <h4 className='stat'>40009</h4>
+                <p className='stat'>{subTitle}</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="col-sm-3 mb-3 mb-sm-0">
+        {/* <div className="col-sm-3 mb-3 mb-sm-0">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Price</h5>
@@ -56,8 +59,8 @@ const Tile = (props: Props) => {
               </div>
             </div>
           </div>
-        </div>
-    </div>
+        </div> */}
+        </>
   )
 }
 
