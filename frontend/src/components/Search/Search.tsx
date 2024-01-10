@@ -9,7 +9,11 @@ interface Props  {
 
 }
 
-const Search: React.FC<Props> = ({onSearchSubmit, search, handleSearchChange}: Props) : JSX.Element => {
+const Search: React.FC<Props> = ({
+  onSearchSubmit, 
+  search, 
+  handleSearchChange
+}: Props) : JSX.Element => {
 
    
 

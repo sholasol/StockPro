@@ -10,9 +10,9 @@ interface Props  {
 
 const Card: React.FC<Props> = ({id, searchResult, onPortfolioCreate}: Props) : JSX.Element => {
   return (
-   <div key={id} id={id} className="card col-md-6 offset-md-3 mb-2">
+   <div key={id} id={id} className="card col-md-10 offset-md-1 mb-2">
     <div className="card-header">
-        Featured
+        {searchResult.name}
     </div>
     <div className="card-body">
         <h5 className="card-title">{searchResult.name}</h5>
