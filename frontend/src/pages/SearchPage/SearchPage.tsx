@@ -4,6 +4,7 @@ import { searchCompanies } from '../../api';
 import Search from '../../components/Search/Search';
 import CardList from '../../components/CardList/CardList';
 import ListPortfolio from '../../components/Portfolio/PortfolioList/ListPortfolio';
+import Header from '../../components/Header/Header';
 
 type Props = {}
 
@@ -50,7 +51,8 @@ const SearchPage = (props: Props) => {
 
 
   return (
-    <div>
+    <>
+    <Header/>
         <Search 
       onSearchSubmit={onSearchSubmit} 
       search={search} 
@@ -72,7 +74,7 @@ const SearchPage = (props: Props) => {
       
       
       {serverError && <h1>{serverError}</h1>}
-    </div>
+    </>
   )
 }
 

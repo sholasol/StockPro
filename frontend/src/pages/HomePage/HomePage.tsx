@@ -2,11 +2,14 @@ import React from 'react'
 import stock from '../../assets/stock.jpg'
 import './home.css'
 import { Link } from 'react-router-dom'
+import Header from '../../components/Header/Header'
 
 interface Props  {}
 
 const HomePage = (props: Props) => {
   return (
+    <>
+    <Header/>
     <div className="container">
       <div className='row mt-5'>
       <div className="col-md-5 desc">
@@ -53,6 +56,7 @@ const HomePage = (props: Props) => {
       </div>
     </div>
     </div>
+    </>
   )
 }
 

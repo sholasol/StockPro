@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import SearchPage from "../pages/SearchPage/SearchPage";
 import HomePage from "../pages/HomePage/HomePage";
+import CompanyPage from "../pages/CompanyPage/CompanyPage";
 
 
 
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
     children: [
       { path: "", element: <HomePage /> },
       { path: "search", element: <SearchPage /> },
+      { path: "company", element: <CompanyPage /> },
     //   { path: "design-guide", element: <DesignGuide /> },
     //   {
     //     path: "company/:ticker",
