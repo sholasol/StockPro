@@ -3,6 +3,11 @@ import App from "../App";
 import SearchPage from "../pages/SearchPage/SearchPage";
 import HomePage from "../pages/HomePage/HomePage";
 import CompanyPage from "../pages/CompanyPage/CompanyPage";
+import DesignGuide from "../pages/DesignGuide/DesignGuide";
+import CompanyProfile from "../components/CompanyProfile/CompanyProfile";
+import IncomeStatement from "../components/IncomeStatement/IncomeStatement";
+import BalanceSheet from "../components/BalanceSheet/BalanceSheet";
+import CashflowStatement from "../components/CashflowStatement/CashflowStatement";
 
 
 
@@ -16,18 +21,18 @@ export const router = createBrowserRouter([
       { path: "", element: <HomePage /> },
       { path: "search", element: <SearchPage /> },
       { path: "company", element: <CompanyPage /> },
-    //   { path: "design-guide", element: <DesignGuide /> },
-    //   {
-    //     path: "company/:ticker",
-    //     element: <CompanyPage />,
-    //     children: [
-    //       { path: "company-profile", element: <CompanyProfile /> },
-    //       { path: "income-statement", element: <IncomeStatement /> },
-    //       { path: "balance-sheet", element: <BalanceSheet /> },
-    //       { path: "cashflow-statement", element: <CashflowStatement /> },
-    //       // { path: "historical-dividend", element: <HistoricalDividend /> },
-    //     ],
-    //   },
+      { path: "design-guide", element: <DesignGuide /> },
+      {
+        path: "company/:ticker",
+        element: <CompanyPage />,
+        children: [
+          { path: "company-profile", element: <CompanyProfile /> },
+          { path: "income-statement", element: <IncomeStatement /> },
+          { path: "balance-sheet", element: <BalanceSheet /> },
+          { path: "cashflow-statement", element: <CashflowStatement /> },
+          // { path: "historical-dividend", element: <HistoricalDividend /> },
+        ],
+      },
     ],
   },
 ]);
