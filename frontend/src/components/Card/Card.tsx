@@ -22,7 +22,6 @@ const Card: React.FC<Props> = ({id, searchResult, onPortfolioCreate}: Props) : J
         <h2>Currency: {searchResult.currency}</h2>
         <p className="card-text">{searchResult.symbol}</p>
         <AddPortfolio onPortfolioCreate={onPortfolioCreate} symbol={searchResult.symbol}/>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
     </div>
     </div>
 

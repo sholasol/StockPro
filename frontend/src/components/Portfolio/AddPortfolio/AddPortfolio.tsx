@@ -10,7 +10,10 @@ const AddPortfolio = ({onPortfolioCreate, symbol}: Props) => {
     <div>
         <form onSubmit={onPortfolioCreate}>
             <input readOnly={true} hidden={true} value={symbol} />
-            <button type='submit' className='btn btn-success btn-sm'>Add</button>
+            <button type='submit' className='btn btn-primary'>
+              <i className="ri-briefcase-2-line mr-2"></i> 
+              Add Portfolio
+              </button>
         </form>
     </div>
   )

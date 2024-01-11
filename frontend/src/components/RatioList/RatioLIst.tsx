@@ -9,27 +9,19 @@ type Props = {
 const RatioLIst = ({ config, data }: Props) => {
   const renderedCells = config.map((row: any) => {
     return (
-      <li className="py-6 sm:py-6">
-        <div className="flex items-center space-x-4">
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-gray-900 truncate">
-              {row.label}
-            </p>
-            <p className="text-sm text-gray-500 truncate">
-              <a
-                href="/cdn-cgi/l/email-protection"
-                className="__cf_email__"
-                data-cfemail="17727a767e7b57607e7973646372653974787a"
-              >
-                {row.subTitle && row.subTitle}
-              </a>
-            </p>
-          </div>
-          <div className="inline-flex items-center text-base font-semibold text-gray-900">
-            {row.render(data)}
+      <>
+        <div className="card mb-2">
+          <h5 className="card-header">{row.label}</h5>
+          <div className="card-body">
+            <h5 className="card-title">{row.render(data)}</h5>
+            <p className="card-text">{row.subTitle && row.subTitle}</p>
+            <a 
+            href="/cdn-cgi/l/email-protection"
+            data-cfemail="17727a767e7b57607e7973646372653974787a"
+            className="btn btn-primary">View Detail</a>
           </div>
         </div>
-      </li>
+      </>
     );
   });
   return (
