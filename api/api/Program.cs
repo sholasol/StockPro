@@ -1,4 +1,8 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using api.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -6,6 +10,23 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+//mysql connection
+builder.Services.AddDbContext<ApplicationDBContext>(options =>
+{
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("MySqlConnStr"),
+        new MySqlServerVersion(new Version(10, 4, 28)),//phpmyadmin version 10.4.28
+        mySqlOptions =>
+        {
+            mySqlOptions.EnableRetryOnFailure();
+        });
+});
+
+
+
+
 
 var app = builder.Build();
 
