@@ -27,9 +27,17 @@
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Data\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\Comment\" />
+    <None Remove="Dtos\Stock\" />
+    <None Remove="Mappers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Data\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\Comment\" />
+    <Folder Include="Dtos\Stock\" />
+    <Folder Include="Mappers\" />
   </ItemGroup>
 </Project>
