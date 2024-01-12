@@ -1,4 +1,6 @@
 ﻿using api.Data;
+using api.Interfaces;
+using api.Repository;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -25,7 +27,9 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 });
 
 
-
+//injecting the repositories
+builder.Services.AddScoped<IStockRepository, StockRepository>();
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 
 
 var app = builder.Build();

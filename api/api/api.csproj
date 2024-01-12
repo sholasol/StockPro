@@ -31,6 +31,8 @@
     <None Remove="Dtos\Comment\" />
     <None Remove="Dtos\Stock\" />
     <None Remove="Mappers\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Repository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -39,5 +41,7 @@
     <Folder Include="Dtos\Comment\" />
     <Folder Include="Dtos\Stock\" />
     <Folder Include="Mappers\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
 </Project>
