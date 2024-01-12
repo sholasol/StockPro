@@ -1,4 +1,16 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.api FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/StockController.cs">
+    <Files>
+      <File FileName="api/Controllers/StockController.cs" Line="73" Column="39" />
+      <File FileName="api/Mappers/StockMapper.cs" />
+      <File FileName="api/Dtos/Stock/UpdateStockRequestDto.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>
