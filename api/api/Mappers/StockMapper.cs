@@ -14,9 +14,10 @@ namespace api.Mappers
 				Symbol = StockModel.Symbol,
 				CompanyName = StockModel.CompanyName,
 				Purchase = StockModel.Purchase,
-				LastDiv =  StockModel.LastDiv,
-				Industry	= StockModel.Industry,
-				MarketCap = StockModel.MarketCap
+				LastDiv = StockModel.LastDiv,
+				Industry = StockModel.Industry,
+				MarketCap = StockModel.MarketCap,
+				Comments = StockModel.Comments.Select(c => c.ToCommentDto()).ToList()
 			};
 		}
 

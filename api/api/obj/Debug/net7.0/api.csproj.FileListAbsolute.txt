@@ -41,3 +41,7 @@
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/MySqlConnector.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/System.CodeDom.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
