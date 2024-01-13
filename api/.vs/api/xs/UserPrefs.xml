@@ -1,16 +1,36 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/StockController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/CommentController.cs">
     <Files>
-      <File FileName="api/Controllers/StockController.cs" Line="73" Column="39" />
-      <File FileName="api/Mappers/StockMapper.cs" />
-      <File FileName="api/Dtos/Stock/UpdateStockRequestDto.cs" />
+      <File FileName="api/Repository/CommentRepository.cs" Line="22" Column="33" />
+      <File FileName="api/Interfaces/ICommentRepository.cs" Line="16" Column="1" />
+      <File FileName="api/Controllers/CommentController.cs" Line="62" Column="3" />
+      <File FileName="api/Mappers/CommentMapper.cs" Line="27" Column="46" />
+      <File FileName="api/Interfaces/IStockRepository.cs" Line="23" Column="1" />
+      <File FileName="api/Repository/StockRepository.cs" Line="61" Column="62" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="api">
+            <Node name="api">
+              <Node name="Controllers">
+                <Node name="CommentController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>
