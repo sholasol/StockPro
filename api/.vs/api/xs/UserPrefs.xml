@@ -1,22 +1,27 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/CommentController.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Dtos/Stock/UpdateStockRequestDto.cs">
     <Files>
-      <File FileName="api/Repository/CommentRepository.cs" Line="22" Column="33" />
-      <File FileName="api/Interfaces/ICommentRepository.cs" Line="16" Column="1" />
-      <File FileName="api/Controllers/CommentController.cs" Line="62" Column="3" />
-      <File FileName="api/Mappers/CommentMapper.cs" Line="27" Column="46" />
-      <File FileName="api/Interfaces/IStockRepository.cs" Line="23" Column="1" />
-      <File FileName="api/Repository/StockRepository.cs" Line="61" Column="62" />
+      <File FileName="api/Dtos/Comment/CreateCommentDto.cs" Line="14" Column="9" />
+      <File FileName="api/Dtos/Comment/updateCommentRequestDto.cs" Line="18" Column="2" />
+      <File FileName="api/Dtos/Stock/CreateStockRequestDto.cs" Line="38" Column="1" />
+      <File FileName="api/Dtos/Stock/UpdateStockRequestDto.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="api">
-            <Node name="api">
-              <Node name="Controllers">
-                <Node name="CommentController.cs" selected="True" />
+            <Node name="api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Dtos" expanded="True">
+                <Node name="Stock" expanded="True" />
               </Node>
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Mappers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Repository" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -26,11 +31,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
