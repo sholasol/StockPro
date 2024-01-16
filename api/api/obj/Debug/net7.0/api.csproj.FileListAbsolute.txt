@@ -45,3 +45,17 @@
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Newtonsoft.Json.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
