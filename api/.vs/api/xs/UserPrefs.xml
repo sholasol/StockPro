@@ -1,23 +1,26 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Dtos/Stock/UpdateStockRequestDto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/StockController.cs">
     <Files>
-      <File FileName="api/Dtos/Comment/CreateCommentDto.cs" Line="14" Column="9" />
-      <File FileName="api/Dtos/Comment/updateCommentRequestDto.cs" Line="18" Column="2" />
-      <File FileName="api/Dtos/Stock/CreateStockRequestDto.cs" Line="38" Column="1" />
-      <File FileName="api/Dtos/Stock/UpdateStockRequestDto.cs" Line="20" Column="1" />
+      <File FileName="api/Dtos/Comment/CreateCommentDto.cs" />
+      <File FileName="api/Controllers/StockController.cs" Line="94" Column="1" />
+      <File FileName="api/Repository/CommentRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="api">
             <Node name="api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Dtos" expanded="True">
-                <Node name="Stock" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="StockController.cs" selected="True" />
               </Node>
+              <Node name="Dtos" expanded="True" />
               <Node name="Interfaces" expanded="True" />
               <Node name="Mappers" expanded="True" />
               <Node name="Models" expanded="True" />
@@ -31,8 +34,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

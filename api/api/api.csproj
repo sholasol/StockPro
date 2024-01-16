@@ -24,6 +24,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.15" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.15" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +38,7 @@
     <None Remove="Mappers\" />
     <None Remove="Interfaces\" />
     <None Remove="Repository\" />
+    <None Remove="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -45,5 +49,6 @@
     <Folder Include="Mappers\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Repository\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>
