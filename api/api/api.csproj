@@ -40,6 +40,7 @@
     <None Remove="Repository\" />
     <None Remove="Helpers\" />
     <None Remove="Dtos\Account\" />
+    <None Remove="Service\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -52,5 +53,6 @@
     <Folder Include="Repository\" />
     <Folder Include="Helpers\" />
     <Folder Include="Dtos\Account\" />
+    <Folder Include="Service\" />
   </ItemGroup>
 </Project>
