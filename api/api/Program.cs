@@ -27,6 +27,17 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 
 
 //mysql connection
+//builder.Services.AddDbContext<ApplicationDBContext>(options =>
+//{
+//    options.UseMySql(
+//        builder.Configuration.GetConnectionString("MySqlConnStr"),
+//        new MySqlServerVersion(new Version(10, 4, 28)),//phpmyadmin version 10.4.28
+//        mySqlOptions =>
+//        {
+//            mySqlOptions.EnableRetryOnFailure();
+//        });
+//});
+
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
 {
     options.UseMySql(

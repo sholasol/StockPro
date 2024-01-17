@@ -39,6 +39,7 @@
     <None Remove="Interfaces\" />
     <None Remove="Repository\" />
     <None Remove="Helpers\" />
+    <None Remove="Dtos\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -50,5 +51,6 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Repository\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Dtos\Account\" />
   </ItemGroup>
 </Project>
