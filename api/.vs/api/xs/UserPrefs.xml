@@ -1,32 +1,35 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/AccountController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/StockController.cs">
     <Files>
-      <File FileName="api/Controllers/AccountController.cs" Line="56" Column="41" />
-      <File FileName="api/Dtos/Account/RegisterDto.cs" Line="17" Column="17" />
+      <File FileName="api/Controllers/AccountController.cs" Line="54" Column="1" />
       <File FileName="api/Data/ApplicationDBContext.cs" Line="28" Column="7" />
+      <File FileName="api/Interfaces/ITokenService.cs" Line="11" Column="1" />
+      <File FileName="api/Service/TokenService.cs" Line="44" Column="51" />
+      <File FileName="api/Program.cs" Line="50" Column="4" />
+      <File FileName="api/Dtos/Account/NewUserDto.cs" Line="14" Column="1" />
+      <File FileName="api/Dtos/Account/LoginDto.cs" Line="16" Column="1" />
+      <File FileName="api/Controllers/StockController.cs" Line="30" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="api">
             <Node name="api">
-              <Node name="Controllers" expanded="True">
-                <Node name="AccountController.cs" selected="True" />
+              <Node name="Controllers">
+                <Node name="StockController.cs" selected="True" />
               </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Dtos" expanded="True">
                 <Node name="Account" expanded="True" />
               </Node>
-              <Node name="Helpers" expanded="True" />
               <Node name="Interfaces" expanded="True" />
-              <Node name="Mappers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Repository" expanded="True" />
+              <Node name="Service" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -36,5 +39,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
