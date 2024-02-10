@@ -1,21 +1,27 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Data/ApplicationDBContext.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Program.cs">
     <Files>
       <File FileName="api/Controllers/AccountController.cs" />
-      <File FileName="api/Models/Portfolio.cs" Line="7" Column="1" />
-      <File FileName="api/Models/AppUser.cs" Line="8" Column="75" />
-      <File FileName="api/Models/Stock.cs" Line="7" Column="1" />
-      <File FileName="api/Models/Comment.cs" Line="7" Column="1" />
-      <File FileName="api/Data/ApplicationDBContext.cs" Line="34" Column="34" />
+      <File FileName="api/Controllers/PortfolioController.cs" Line="31" Column="4" />
+      <File FileName="api/Extensions/ClaimExtensions.cs" Line="16" Column="1" />
+      <File FileName="api/Interfaces/IPortfolioRepository.cs" Line="12" Column="1" />
+      <File FileName="api/Repository/PortfolioRepository.cs" Line="18" Column="39" />
+      <File FileName="api/Program.cs" Line="124" Column="69" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="api" expanded="True">
             <Node name="api">
-              <Node name="Data">
-                <Node name="ApplicationDBContext.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -24,9 +30,5 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

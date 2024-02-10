@@ -41,6 +41,7 @@
     <None Remove="Helpers\" />
     <None Remove="Dtos\Account\" />
     <None Remove="Service\" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -54,5 +55,6 @@
     <Folder Include="Helpers\" />
     <Folder Include="Dtos\Account\" />
     <Folder Include="Service\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>
