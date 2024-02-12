@@ -18,6 +18,12 @@ namespace api.Models
 		public int? StockId { get; set; }
 
 		public Stock? Stock { get; set; }
+
+		//create ono-one relationship between comment and user
+		public string AppUserId { set; get; }
+
+		public AppUser AppUser { get; set; }
+
 	}
 }
 
