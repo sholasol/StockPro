@@ -25,7 +25,6 @@
 /Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/staticwebassets.build.json
 /Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/staticwebassets.development.json
 /Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/scopedcss/bundle/api.styles.css
-/Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/api.csproj.CopyComplete
 /Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/api.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/refint/api.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/api.pdb
@@ -59,3 +58,5 @@
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/applemacbook/Documents/Projects/StockPro/api/api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/api.sourcelink.json
+/Users/applemacbook/Documents/Projects/StockPro/api/api/obj/Debug/net7.0/api.csproj.Up2Date

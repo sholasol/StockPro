@@ -1,35 +1,18 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Controllers/StockController.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/Repository/CommentRepository.cs">
     <Files>
-      <File FileName="api/Models/Comment.cs" Line="25" Column="39" />
-      <File FileName="api/Repository/StockRepository.cs" Line="34" Column="36" />
-      <File FileName="api/Dtos/Comment/CommentDto.cs" Line="14" Column="62" />
-      <File FileName="api/Mappers/CommentMapper.cs" Line="18" Column="58" />
-      <File FileName="api/Controllers/StockController.cs" Line="38" Column="62" />
+      <File FileName="api/Controllers/StockController.cs" />
+      <File FileName="api/Controllers/CommentController.cs" />
+      <File FileName="api/Helpers/CommentQueryObject.cs" />
+      <File FileName="api/Interfaces/ICommentRepository.cs" />
+      <File FileName="api/Repository/CommentRepository.cs" Line="38" Column="28" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="api">
-            <Node name="api">
-              <Node name="Controllers" expanded="True">
-                <Node name="StockController.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
