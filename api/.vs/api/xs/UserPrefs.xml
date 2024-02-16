@@ -1,18 +1,35 @@
 ﻿<Properties StartupConfiguration="{EC36AF3A-C14E-4BAD-A739-2A6A060B83F8}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="api/Repository/CommentRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="api/appsettings.json">
     <Files>
       <File FileName="api/Controllers/StockController.cs" />
-      <File FileName="api/Controllers/CommentController.cs" />
+      <File FileName="api/Controllers/CommentController.cs" Line="38" Column="14" />
       <File FileName="api/Helpers/CommentQueryObject.cs" />
       <File FileName="api/Interfaces/ICommentRepository.cs" />
-      <File FileName="api/Repository/CommentRepository.cs" Line="38" Column="28" />
+      <File FileName="api/Repository/CommentRepository.cs" Line="8" Column="25" />
+      <File FileName="api/Program.cs" Line="137" Column="1" />
+      <File FileName="api/appsettings.json" Line="12" Column="39" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="api" expanded="True">
+            <Node name="api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
