@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
 import { loginApi, registerApi } from "../services/authservice";
 import { toast } from "react-toastify";
+import React from "react";
+import axios from "axios";
 
 type UserContextType = {
     user: UserProfile | null;
@@ -40,6 +42,7 @@ export const UserProvider = ({ children}: props) => {
         if(user && token){
             setUser(JSON.parse(user));
             setToken(token);
+            axios.defaults.headers.common["Authorization"] = "Bearer " + token;
         }
         setIsReady(true);
     }, []);
@@ -101,3 +104,7 @@ export const UserProvider = ({ children}: props) => {
         </UserContext.Provider>
     );
 };
+
+export const useAuth = () => React.useContext(UserContext);
+
+//export const useAuth = () => React.useContext(UserContext);

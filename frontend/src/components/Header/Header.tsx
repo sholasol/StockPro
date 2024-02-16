@@ -27,7 +27,7 @@ const Header = (props: Props) => {
             <i className="ri-user-6-fill"></i> 
             Register
             </Link>
-        <Link to="/" className="btn btn-outline-succes btn-logins">
+        <Link to="/login" className="btn btn-outline-succes btn-logins">
             <i className="ri-user-6-fill"></i> 
             Sign In
         </Link>
