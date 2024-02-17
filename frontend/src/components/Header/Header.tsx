@@ -23,7 +23,7 @@ const Header = (props: Props) => {
         </li>
       </ul>
       <div className="d-flex">
-        <Link to="/" className="btn btn-outline-primary btn-login">
+        <Link to="/register" className="btn btn-outline-primary btn-login">
             <i className="ri-user-6-fill"></i> 
             Register
             </Link>

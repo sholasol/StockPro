@@ -9,6 +9,7 @@ import axios from "axios";
 type UserContextType = {
     user: UserProfile | null;
     token: string | null;
+    
     registerUser: (
             email: string, 
             username: string, 
@@ -16,7 +17,7 @@ type UserContextType = {
             ) => void;
 
     loginUser: ( 
-            username: string, 
+            email: string, 
             password: string
             ) => void;
 
@@ -61,16 +62,16 @@ export const UserProvider = ({ children}: props) => {
                 localStorage.setItem("user", JSON.stringify(userobj));
                 setToken(res?.data.token);
                 setUser(userobj!);
-                toast.success("Login Succes!");
+                toast.success("Registeration Succes!");
                 navigate("/search");
             }
         }).catch((e) => toast.warning("Server error occured"));
     };
 
     const loginUser = async (
-        username:string, 
+        email:string, 
         password:string) => {
-        await loginApi( username, password).then((res)=>{
+        await loginApi( email, password).then((res)=>{
             if(res) {
                 localStorage.setItem("token", res?.data.token);
                 const userobj = {
