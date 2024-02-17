@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth } from '../../Context/useAuth'
 
 type Props = {}
 
 const Sidebar = (props: Props) => {
+  const {user, logout} = useAuth();
   return (
     <>
-        <div className="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+      <div className="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary sidebar-fixed">
       <div className="offcanvas-md offcanvas-end bg-body-tertiary" tabIndex={-1} id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="sidebarMenuLabel">Company Overview</h5>
@@ -38,10 +40,16 @@ const Sidebar = (props: Props) => {
                 Cashflow Statement
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link d-flex align-items-center gap-2" href="#">
                 <i className="ri-file-list-3-line"></i>
                 Orders
+              </a>
+            </li> */}
+            <li className="nav-item">
+              <a onClick={logout} className="nav-link d-flex align-items-center gap-2 text-danger" >
+                <i className="ri-shut-down-line"></i>
+                Logout
               </a>
             </li>
           </ul>

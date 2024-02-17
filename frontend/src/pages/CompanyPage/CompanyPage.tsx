@@ -7,10 +7,13 @@ import Tile from '../../components/Tile/Tile';
 import Spinner from '../../components/Spinners/Spinner';
 import CompanyDashboard from '../../components/CompanyDashboard/CompanyDashboard';
 import CompFinder from '../../components/CompFinder/CompFinder';
+import { useAuth } from '../../Context/useAuth';
 
 type Props = {}
 
 const CompanyPage = (props: Props) => {
+  const {user} = useAuth();
+
   let {ticker} = useParams();
   const [company, setCompany] = useState<CompanyProfile>();
 
@@ -54,7 +57,7 @@ const CompanyPage = (props: Props) => {
       <Sidebar/>
       <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 className="h2">Dashboard</h1>
+          <h1 className="h2">Welcome, {user?.userName}</h1>
         </div>
       <CompanyDashboard ticker={ticker!}>
          <div className='row mb-5'>
