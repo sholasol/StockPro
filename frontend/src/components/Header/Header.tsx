@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth } from '../../Context/useAuth'
 
 
 type Props = {}
 
 const Header = (props: Props) => {
+
+  const {isLoggedIn, user, logout} = useAuth();
+
   return (
     <>
    <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
@@ -22,7 +26,20 @@ const Header = (props: Props) => {
           <Link className="nav-link" to="/search">Search</Link>
         </li>
       </ul>
-      <div className="d-flex">
+      {isLoggedIn() ? (
+          <div className="d-flex">
+        <a className="btn btn-outline-primary btn-login">
+            <i className="ri-user-6-fill"></i> 
+            Welcome, {user?.userName}
+            </a>
+        <a onClick={logout} className="btn btn-outline-danger btn-logout">
+            <i className="ri-user-6-fill"></i> 
+            Logout
+        </a>
+      </div>
+      ) :
+       (
+        <div className="d-flex">
         <Link to="/register" className="btn btn-outline-primary btn-login">
             <i className="ri-user-6-fill"></i> 
             Register
@@ -32,6 +49,8 @@ const Header = (props: Props) => {
             Sign In
         </Link>
       </div>
+      )}
+      
     </div>
   </div>
 </nav>
