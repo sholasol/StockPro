@@ -31,7 +31,7 @@ const StockCommentForm = ({symbol, handleComment}: Props) => {
     <div className="card">
         <div className="card-body">
             <div className="card col-md-12 mb-2">
-                <h5 className="card-header">Stock Comment</h5>
+                <h5 className="card-header">Create Stock Comment</h5>
                 <div className="card-body">
                    <form onSubmit={handleSubmit(handleComment)}>
                     <div className="mb-3">
